@@ -1,0 +1,301 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vw",
+				"vw_media_alugueis"
+			],
+			[
+				"AS",
+				"AS"
+			],
+			[
+				"v",
+				"vw_cont_alugueis_janeiros"
+			],
+			[
+				"V",
+				"vw_cont_alugueis_janeiros"
+			],
+			[
+				"da",
+				"data_de_aluguel"
+			],
+			[
+				"i",
+				"inventario_id"
+			],
+			[
+				"NU",
+				"NULL"
+			],
+			[
+				"n",
+				"NULL"
+			],
+			[
+				"CO",
+				"codCidade"
+			],
+			[
+				"c",
+				"código"
+			],
+			[
+				"li",
+				"LIKE"
+			],
+			[
+				"L",
+				"LIKE"
+			],
+			[
+				"S",
+				"Seguranca"
+			],
+			[
+				"com",
+				"começam"
+			],
+			[
+				"p",
+				"problemas"
+			],
+			[
+				"e",
+				"está"
+			],
+			[
+				"Wher",
+				"WHERE"
+			],
+			[
+				"as",
+				"aspas"
+			],
+			[
+				"se",
+				"simples"
+			],
+			[
+				"ar",
+				"area"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "int verde = 0;\nint amarelo = 5000;\nint vermelho = 0;\n//variavel para indicar congestionamento, sera substituido por um valor variavel de proporcoes em relacao aos outros apliances fornecido pela central\nbool cong = true;\nvoid setup(){\n  pinMode(13, OUTPUT);  \n}\n\nvoid loop(){\n  blk();\n  //subistituir pela quantidade de carros aqui\n  chkcong();\n  if(cong){\n    tempo -= 50;\n  }else{\n    tempo += 50;\n  }\n}\n\nvoid abre(){\n  digitalWrite(11, LOW);\n  digitalWrite(12, HIGH);\n  delay(amarelo);\n  digitalWrite(12, LOW);\n  digitalWrite(12, HIGH);  \n}\n\nbool chkcong(){\n  if(tempo > 2000){\n    congestionado = true;\n  }else if(tempo < 100){\n    congestionado = false;\n  }\n}\n",
+			"settings":
+			{
+				"buffer_size": 665,
+				"line_ending": "Unix",
+				"name": "int verde = 0;"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Matheus/Documents/Atividade 00 - Tendência de alugueis - Matheus Araujo.sql",
+		"/Users/Matheus/Documents/locadora_sakila_script_dados.sql",
+		"/Users/Matheus/Downloads/AVC-Parte_Pratica-Matheus_Araujo.sql",
+		"/Users/Matheus/Desktop/freudis.sql",
+		"/Users/Matheus/Documents/Casa Fagundes Araujo.sql",
+		"/Users/Matheus/Downloads/CDS BANCO DE DADOS",
+		"/Users/Matheus/Modelo.sql",
+		"/Users/Matheus/Downloads/SCRIPT 9.txt",
+		"/Users/Matheus/Downloads/isadora corrigido",
+		"/Users/Matheus/Downloads/Script banco de dados 002 (Matheus dos Santos)",
+		"/Users/Matheus/Downloads/create database escola.doc",
+		"/Users/Matheus/Downloads/SCRIPT 4txt.txt",
+		"/Users/Matheus/Downloads/Exercicio 2 BD.txt",
+		"/Users/Matheus/Downloads/Exercicio 02.txt",
+		"/Users/Matheus/Desktop/teste.sql"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"prn",
+			"INSERT INTO cidade (codigo, nome_cidade, area, uf)\nVALUES (001, 'campinas', '750043.98', SP),\n(002, 'sao_paulo', 978844.87, 'SP'),\n(003, 'Maua', 78463.00, 'SP'),\n(004, 'Guaruja', 83745.00, 'SP'),\n(005, 'Guarulhos', 74837.44, 'SP'),\n(006, 'curitiba', 23043.90, 'PRN'),\n(007, 'londrina', 33876, 'PRN'),\n(008, 'maringa', 4537.00, 'PRN'),\n(009, 'Foz_do_Iguacu', 21123, 'PRN'),\n(010, 'florianopolis', 12345.00, 'RGS'),\n(011, 'santa_rosa', 7653.00, 'RGS'),\n(012, 'santo_angelo', 4321.00, 'RGS'),\n(013, 'joinville', 5367.98, 'SC'),\n(014, 'florianopolis', 1718.75, 'SC'),\n(015, 'blumenau', 3251.80, 'SC'),\n(016, 'criciuma', 1364.00, 'SC'),\n(017, 'belem', 1819.00, 'PR'),\n(018, 'Xinguara', 8465.85, 'PR'),\n(019, 'Redencao', 3487.38, 'PR'),\n(020, 'Maraba', 3245.00, 'PR'),\n(021, 'Fernando_de_noronha', 9834.00, 'PN'),\n(022, 'recife', 9547.00, 'PN'),\n(023, 'caruaru', 4326.00, 'PN'),\n(024, 'fortaleza', 3456.00, 'CR'),\n(025, 'juazeiro_do_norte', 2376.00, 'CR'),\n(026, 'maracanau', 8743.00, 'CR'),\n(027, 'cuiaba', 2365.00, 'MT'),\n(028, 'rondonopolis', 9845.00, 'MT'),\n(029, 'varzea_grande', 3940.00, 'MT'),\n(030, 'joao_pessoa', 2345.00, 'PRB'),\n(031, 'campina_grande', 8439.00, 'PRB'),\n(032, 'guarabira', 78334.00, 'PRB'),\n(033, 'goiania', 84932.00, 'GO'),\n(034, 'anapolis', 39834.00, 'GO'),\n(035, 'rio_verde', 26537.00, 'GO'),\n(036, 'caudas_novas', 3124.00, 'GO'),\n(037, 'catalao', 23456.00, 'GO'),\n(038, 'Senador_canedo', 2354.00, 'GO'),\n(039, 'aparecida_de_goiania', 23471.00, 'GO'),\n(040, 'terezopolis', 83934.00, 'GO'),\n(041, 'goianapolis', 8245.00, 'GO'),\n(042, 'sao_luiz', 2345.00, 'GO'),\n(043, 'aurilandia', 23452.00, 'GO'),\n(044, 'belo_horizonte', 32874.00, 'MG'),\n(045, 'uberlandia', 13624.00, 'MG'),\n(046, 'Contagem', 23785.49, 'MG'),\n(047, 'formiga', 2387.00, 'MG'),\n(048, 'Salvador', 29834.00, 'BH'),\n(049, 'porto_seguro', 3298.00, 'BH'),\n(050, 'barreiras', 23984.00, 'BH'),\n(051, 'sao_mateus', 8271.92, 'BH'),\n(052, 'rio_de_janeiro', 98237.00, 'RJ'),\n(053, 'niteroi', 9834.00, 'RJ'),\n(054, 'duque_de_caxias', 9323.00, 'RJ'),\n(055, 'petropolis', 3423.00, 'RJ'),\n(056, 'vila_velha', 2335.00, 'ES'),\n(057, 'serra', 9832.00, 'ES'),\n(058, 'vitoria', 4251.00, 'ES'),\n(059, 'manaus', 8723.00, 'AM'),\n(060, 'paritins', 2348.00, 'AM'),\n(061, 'itacoatiara', 7832.00, 'AM'),\n(062, 'brasilia', 2239.00, 'DF'),\n(063, 'candangolandia', 2342.00, 'DF'),\n(064, 'planaltina', 2938.00, 'DF'),\n(065, 'sao_luiz', 2387.00, 'MR'),\n(066, 'imperatriz', 1982.00, 'MR'),\n(067, 'Sao_jose_de_ribamar', 8349.00, 'MR'),\n(068, 'campo grande', 98233, 'MGS'),\n(069, 'dourados', 98537, 'MGS'),\n(070, 'corumba', 98345.00, 'MGS'),\n(071, 'tres_lagoas', 6251.00, 'MGS'),\n(072, 'natal', 5432.00, 'RGN'),\n(073, 'potiguar', 98341.00, 'RGN'),\n(074, 'mossoro', 2837.00, 'RGN'),\n(075, 'maceio', 17873, 'AL'),\n(076, 'arapiraca', 2398, 'AL'),\n(077, 'rio largo', 23871, 'AL'),\n(078, 'aracaju', 2349.00, 'SR'),\n(079, 'nossa_senhora_do_socorro', 3412, 'SR'),\n(080, 'lagarto', 16758.00, 'SR'),\n(081, 'palmas', 16983, 'TT'),\n(082, 'araguaina', 9853.00, 'TT'),\n(083, 'guarupi', 8931.00, 'TT'),\n(084, 'porto_velho', 3549.00, 'RD'),\n(085, 'ariquemes', 3393.00, 'RD'),\n(086, 'vilhena', 18933.00, 'RD'),\n(087, 'rio_branco', 2390.25, 'AC'),\n(088, 'cruzeiro_do_sul', 2398.00, 'AC'),\n(089, 'feijo', 1090.00, 'AC'),\n(090, 'teresina', 3343.90, 'PI'),\n(091, 'parnaiba', 7863.00, 'PI'),\n(092, 'picos', 9028.93, 'PI'),\n(093, 'boa_vista', 21323.00, 'RR'),\n(094, 'rorainopolis', 2346.00, 'RR'),\n(095, 'caracarai', 3482.00, 'RR'),\n(096, 'macapa', 1289.00, 'AP'),\n(097, 'santana', 8789.76, 'AP'),\n(098, 'oiapoque', 8493.00, 'AP'),\n(099, 'catalao', 8934.00, 'GO'),\n(100, 'sancrerlandia', 2392.00, 'GO'),\n(101, 'mozarlandia', 1902.00, 'GO'),\n(102, 'trindade', 6543.00, 'GO'),\n(103, 'nazario', 2019.00, 'GO'),\n(104, 'itapuranga', 9874.00, 'GO'),\n(105, 'hidrolandia', 7658.00, 'GO'),\n(106, 'itaucu', 2398.00, 'GO'),\n(107, 'inhumas', 7890.95, 'GO');"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 665,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								665,
+								665
+							]
+						],
+						"settings":
+						{
+							"auto_name": "int verde = 0;",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "esboco1.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
